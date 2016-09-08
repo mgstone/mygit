@@ -1,0 +1,25 @@
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android" 
+        android:orientation="vertical" 
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent">  
+         <Button
+           android:layout_height="wrap_content" 
+           android:layout_width="fill_parent" 
+           android:id="@+id/btn" 
+           android:text="加载原图" />   
+      <Button
+           android:layout_height="wrap_content" 
+           android:layout_width="fill_parent" 
+           android:id="@+id/btnJAVA" 
+           android:text="Java层实现镜像" />   
+      <Button 
+          android:layout_height="wrap_content" 
+          android:layout_width="fill_parent" 
+          android:id="@+id/btnJNI" 
+          android:text="JNI层实现镜像" />   
+      <ImageView 
+          android:id="@+id/ImageView01" 
+          android:layout_width="fill_parent" 
+          android:layout_height="fill_parent" />   
+      </LinearLayout> 
