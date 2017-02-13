@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent" android:layout_width="fill_parent"
+    android:orientation="vertical" android:background="@drawable/fengjing"
+    >
+    <ScrollView android:layout_height="fill_parent" android:layout_width="fill_parent" 
+	android:layout_weight="1">
+	<LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent"
+	    android:orientation="vertical" >
+
+	    <TextView
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:focusable="true"
+	        android:paddingBottom="10dip"
+	        android:text="@string/account_wizard_text1"
+	        android:textColor="@color/blue_sky"
+	        android:textSize="18sp" />
+
+	    <RadioGroup android:id="@+id/configure_group"
+		android:layout_width="fill_parent" android:layout_height="wrap_content" >
+		<RadioButton android:id="@+id/configure_account"
+		    android:layout_width="fill_parent" android:layout_height="wrap_content"
+		    android:text="@string/account_wizard_configure_account"/>
+		<RadioButton android:id="@+id/create_account"
+		    android:layout_width="fill_parent" android:layout_height="wrap_content"
+		    android:text="@string/account_wizard_create_account"/>
+	    </RadioGroup>
+	</LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+	android:layout_alignParentBottom="true"
+	android:gravity="right|center_vertical"
+	android:layout_height="wrap_content"
+	android:layout_width="fill_parent"
+	android:background="@drawable/bottombar" >
+	<Button
+	    android:id="@+id/next"
+	    android:text="@string/Continue"
+	    android:minWidth="100dp"
+	    android:layout_height="wrap_content"
+	    android:layout_width="wrap_content"
+	    android:drawableRight="@drawable/button_indicator_next"
+	    android:layout_alignParentRight="true"
+	    android:layout_centerVertical="true"
+	    android:enabled="false"
+	    />
+    </RelativeLayout>
+
+</LinearLayout>
